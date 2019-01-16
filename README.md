@@ -45,6 +45,9 @@ Update your apache configuration file (located at `/etc/apache2/sites-available/
 
 # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 ```
+If you don't have `mod_wsgi` installed:
+
+`sudo apt-get install libapache2-mod-wsgi-py3`
 
 Restart apache2 server:
 
@@ -52,4 +55,4 @@ Restart apache2 server:
 
 And now you are able use the API, for example:
 
-`http://vm0024.kaj.pouta.csc.fi/opusapi/?corpus=OpenSubtitles&source=en&target=fi&preprocessing=xml&version=latest`
+http://vm0024.kaj.pouta.csc.fi/opusapi/?corpus=OpenSubtitles&source=en&target=fi&preprocessing=xml&version=latest
